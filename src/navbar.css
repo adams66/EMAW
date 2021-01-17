@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  font-family: "Proza Libre", sans-serif;
+  justify-content: center;
+}
+
+.nav-links-container {
+  margin-top: 40px;
+  display: none;
+  align-items: center;
+}
+
+.nav-links-vertical {
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.link-container {
+  display: inline-block;
+}
+
+.link-container a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.link-container a:hover {
+  color: red;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 40px;
+  top: 37px;
+}
+.x {
+  cursor: pointer;
+  position: absolute;
+  left: 40px;
+  top: 37px;
+}
+
+.x svg {
+  width: 40px;
+  height: 40px;
+}
+
+.hamburger svg {
+  width: 40px;
+  height: 40px;
+}
+
+.link-container a svg {
+  width: 40px;
+  height: 30px;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-links-container {
+    width: 875px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .hamburger {
+    display: none;
+  }
+}
